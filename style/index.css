@@ -47,32 +47,142 @@ table {
 	border-spacing: 0;
 }
 
-* {
-    box-sizing: border-box;
-    padding 0;
-    margin: 0;
-    max-width: 100%;
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Nunito+Sans&display=swap');
+/* General Styles */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
 }
-  
-html {
-    font-size: 62.5%;
+
+html{
+  font-size: 62.5%;
 }
-  
-header {
-    height: 155px;
+
+h1, h2, h3, h4{
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 3px;
+  padding: 4% 0;
 }
-  
-.title {
-    font-size: 40px;
-    height: 50px;
+
+/* Header Style Here */
+header{
+  height:90vh;
+  background-color: white;
+  background-image: url('https://live.staticflickr.com/1827/41927454255_7453b24f44_4k.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
-  
-header nav {
-    width: 100%;
-    height: 100px;
-    background-color: blue;
+
+/* Nav Style Here */
+header nav{
+  width: 100%;
+  background-color: white;
 }
-  
-.links a {
-    border: 2px solid black;
+
+.name{
+  width: 45%;
+  font-size: 2rem;
+}
+
+.links{
+  width: 60%;
+}
+
+nav a{
+  color: #00CED1;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+nav a:hover{
+  color:#AFEEEE;
+}
+
+/* Title Style Here */
+.title-container{
+  height: 80vh;
+}
+
+.main-titles{
+  width: 40%;
+  color: #fde769;
+}
+
+/* Projects Styling Here */
+.projects-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#project-1 {
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+}
+
+#project-2 {
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+}
+
+#project-3 {
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+}
+
+#project-4 {
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+}
+
+#project-5 {
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+}
+
+#project-6 {
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+}
+
+/* Footer Style Here */
+footer{
+  background-color: white;
+  padding: 3% 0;
+  text-align:center;
+}
+
+.contact-me {
+  color: #00CED1;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+
+.contact-me:hover{
+  color:#AFEEEE;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+}
+
+footer nav:hover {
+  color:#fde769;
+}
+
+footer nav a {
+  width: 100px;
+  height: 50px;
 }
