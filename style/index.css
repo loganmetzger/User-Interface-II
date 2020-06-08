@@ -1,1 +1,194 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Nunito+Sans&display=swap');
+/* General Styles */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  /* border: 1px solid red; */
+}
+
+html{
+  font-size: 62.5%;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 3px;
+}
+
+/* End of general document styling */
+
+/* Header Styling */
+header {
+  display: flex;
+  align-items: center;
+  padding-top: 3%;
+}
+
+header h1 {
+  width: 50%;
+  height: 50px;
+  font-size: 4rem;
+}
+
+header  nav {
+  display: flex;
+  width: 50%;
+  font-size: 2rem;
+  justify-content: flex-end;
+}
+
+header nav a {
+  color: #00CED1;
+  text-decoration: none;
+  letter-spacing: 3px;
+  margin: 0 2%;
+}
+
+header nav a:hover {
+  color:#AFEEEE;
+}
+
+/* Central Image Styling */
+.central-image{
+  height:90vh;
+  background-color: white;
+  background-image: url('https://live.staticflickr.com/1827/41927454255_7453b24f44_4k.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.central-image h2 {
+  width: 50%;
+  height: 19%;
+  color: #fde769;
+  font-size: 6rem;
+  text-align: center;
+  background-color: rgba(42, 45, 53, 0.5)
+}
+
+.projects-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.project {
+  width: 30%;
+  height: 30%;
+  display: flex;
+  margin: 1% auto;
+}
+
+/* Footer Styling */
+footer {
+  padding: 3% 0;
+  text-align: center;
+  background-color: #164D8D
+}
+
+.contact-me a {
+  color: #fde769;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 40px;
+}
+
+.contact-me a:hover {
+  color:#626A88;
+}
+
+/* Tablet Size */
+@media(max-width: 800px){
+  .central-image h2 {
+    height: 28%;
+  }
+
+  .project {
+    width: 50%;
+    justify-content: center;
+  }
+}
+
+/* Phone Size */
+@media(max-width: 500px){
+  header {
+    flex-direction: column;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin-top: 3.5%;
+    margin-left: 2%;
+  }
+
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+  }
+
+  header nav a {
+    padding: 1.3%;
+  }
+  
+  .central-image h2 {
+    height: 36%;
+  }
+}
